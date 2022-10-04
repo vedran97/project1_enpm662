@@ -1,6 +1,6 @@
 {
     "python.autoComplete.extraPaths": [
-        "/workspaces/ros1-template-workspace/devel/lib/python3/dist-packages",
+        "/workspaces/project1_enpm662/devel/lib/python3/dist-packages",
         "/opt/ros/noetic/lib/python3/dist-packages"
     ],
     "files.associations": {
@@ -72,7 +72,7 @@
         "bit": "cpp"
     },
     "python.analysis.extraPaths": [
-        "/workspaces/ros1-template-workspace/devel/lib/python3/dist-packages",
+        "/workspaces/project1_enpm662/devel/lib/python3/dist-packages",
         "/opt/ros/noetic/lib/python3/dist-packages"
     ]
 }

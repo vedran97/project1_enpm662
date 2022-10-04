@@ -3,7 +3,7 @@ FROM ros:noetic
 ARG USERNAME=vedant
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
-ARG WORKSPACE_PATH=/workspaces/ros1-template-workspace
+ARG WORKSPACE_PATH=/workspaces/project1_enpm662
 
 COPY . /install/
 
