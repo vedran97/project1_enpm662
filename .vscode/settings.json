@@ -74,5 +74,6 @@
     "python.analysis.extraPaths": [
         "/workspaces/project1_enpm662/devel/lib/python3/dist-packages",
         "/opt/ros/noetic/lib/python3/dist-packages"
-    ]
+    ],
+    "ros.distro": "noetic"
 }
