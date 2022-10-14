@@ -13,3 +13,4 @@ git
 xclip
 nano
 htop
+liburdfdom-tools
