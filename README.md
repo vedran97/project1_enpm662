@@ -1,9 +1,4 @@
-# Intent of the repository : 
-
-1. I created this repository , so that fellow ros1 noetic developers have access to a dockerized ros-noetic workspace on an ubuntu 20.04 base for ENPM662 project1.
-2. This workspace can be minimzed and also be used for pure c++ development, using ros as a build and execute system.
-
-# Initial Setup :
+# Initial Setup (if using docker):
 
 1. Install vs-code editor on your ubuntu 20.04 host OS : https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-20-04/
 2. Install docker on your ubuntu 20.04 host OS : https://docs.docker.com/engine/install/ubuntu/

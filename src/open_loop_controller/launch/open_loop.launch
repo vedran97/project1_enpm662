@@ -1,0 +1,8 @@
+<launch>
+  <node
+    pkg="open_loop_controller"
+    type="open_loop_controller_node"
+    name="control_signal_publisher" 
+    output="screen"
+  />
+</launch> 
