@@ -1,0 +1,8 @@
+<launch>
+  <node
+    pkg="open_loop_controller"
+    type="command_sub_node"
+    name="control_signal_subscriber" 
+    output="screen"
+  />
+</launch> 
