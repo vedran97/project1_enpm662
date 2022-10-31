@@ -135,8 +135,8 @@ LINK_DIRECTORIES(/usr/local/lib)
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(${PROJECT_NAME}_node src/open_loop_controller_node.cpp)
-add_executable(command_sub_node src/controller_command_subscriber.cpp)
+add_executable(controller_command_publisher src/controller_command_publisher.cpp)
+add_executable(controller_command_subscriber src/controller_command_subscriber.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -148,10 +148,10 @@ add_executable(command_sub_node src/controller_command_subscriber.cpp)
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(${PROJECT_NAME}_node
+target_link_libraries(controller_command_publisher
   ${catkin_LIBRARIES}
 )
-target_link_libraries(command_sub_node ${catkin_LIBRARIES})
+target_link_libraries(controller_command_subscriber ${catkin_LIBRARIES})
 
 install(DIRECTORY launch
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}

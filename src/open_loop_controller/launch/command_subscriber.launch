@@ -1,7 +1,7 @@
 <launch>
   <node
     pkg="open_loop_controller"
-    type="command_sub_node"
+    type="controller_command_subscriber"
     name="control_signal_subscriber" 
     output="screen"
   />

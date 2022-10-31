@@ -4,8 +4,6 @@
 #include "ros/ros.h"
 
 #include "std_msgs/Float64.h"
-std_msgs::Float64 linearVelocityCommand;
-std_msgs::Float64 steeringAngleCommand;
 /**
  * Assuming 1D motion in X direction
  * Using a velocity profile which is a inverted parabola
@@ -23,7 +21,7 @@ double getLinearVelocity(const double& t,const double& T){
 double getT(const double&  xInitial, const double& xFinal){
     return (6/(4*vmax))*(xFinal - xInitial);
 }
-static const constexpr double radiusOfWheel = 0.2032/2; //Radius o wheel in meters
+static const constexpr double radiusOfWheel = 0.2032/2; //Radius of wheel in meters
 double getAngularVelocityOfWheel(const double& v){
     return v/radiusOfWheel;
 }
@@ -33,7 +31,7 @@ double getAngularVelocityOfWheel(const double& v){
 int main(int argc, char **argv) {
  
     // Initiate ROS
-    ros::init(argc, argv, "open_loop_controller");
+    ros::init(argc, argv, "command_publisher");
 
     /**
      * Setup ROS nodes 
@@ -67,7 +65,7 @@ int main(int argc, char **argv) {
     const double xFinal = 5;
     const double totalTime = getT(xInit,xFinal);
 
-    std::cout<<"total time:"<<totalTime<<std::endl;
+    std::cout<<"total time of motion:"<<totalTime<<std::endl;
 
     while (ros::ok()) {
         
