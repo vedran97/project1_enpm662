@@ -1,3 +1,9 @@
+# Project descripttion : 
+
+1. This project was worked on as course requirement for ENPM662-Fall22, at UMD,College Park in collaboration with Aditi Bhoir https://github.com/Abhoir1
+2. This project included solidworks modelling, and ros deployment of a basic 4 wheeled robot
+3. Every package has a readme with further description and usage instructions
+
 # Initial Setup (if using docker):
 
 1. Install vs-code editor on your ubuntu 20.04 host OS : https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-20-04/

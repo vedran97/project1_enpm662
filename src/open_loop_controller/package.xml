@@ -2,18 +2,22 @@
 <package format="2">
   <name>open_loop_controller</name>
   <version>1.0.0</version>
-  <description>The open_loop_controller package</description>
+  <description>
+    <p>This package generates a trajectory and commands, to move a robot (defined under robot_urdf package) in a straight line for a finite time</p>
+  </description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
   <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
-  <maintainer email="vedant@todo.todo">vedant</maintainer>
+  <author email="vedantmranade@gmail.com">Vedant Ranade</author>
+  <author email="abhoir@umd.edu">Aditi Bhoir</author>
+  <maintainer email="vedantmranade@gmail.com">Vedant Ranade</maintainer>
 
 
   <!-- One license tag required, multiple allowed, one license per tag -->
   <!-- Commonly used license strings: -->
   <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
-  <license>TODO</license>
+  <license>MIT</license>
 
 
   <!-- Url tags are optional, but multiple are allowed, one per tag -->
